@@ -76,7 +76,7 @@ def count_objects_in_region(video_path, output_video_path, model_path):
         enhanced_frame = enhance_dark_blurry(frame)
 
         # Nhận diện + đếm
-        results = counter(enhanced_frame)
+        results = counter(enhanced_frame)   
 
         # Ghi video + hiển thị
         video_writer.write(results.plot_im)
